@@ -1,0 +1,187 @@
+*{margin: 0;padding: 0;font-size:18px }
+body{  
+    color: lightgrey;
+     background-color: #191919;
+  
+   
+}
+#back-to-top-btn{ /*незаконченная кнопка*/
+    position: fixed;
+    bottom:10%;
+    right:5%;
+    font-size: 45px;
+    height: 5rem;
+    width: 5rem;
+    background-color: transparent;
+    color: lightgray;
+    cursor: pointer;
+    outline: none;
+    border: 0.2rem solid lightgray;
+    border-radius: 30%;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+   
+
+}
+/* Header*/
+
+.header a{
+    color: lightgrey;    
+    text-decoration: none; 
+    font-size:1.5rem;    
+}
+
+.header.not-exist{ 
+    background-image:url(images/404-2.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+.not-exist-box{
+  
+    text-align:center;    
+    margin: auto;
+    
+}
+.not-exist-box h1{
+    font-size: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;     
+    background-image:url(images/main.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     font-family: Cinzel, serif;
+}
+.header-top{
+   height:5vh;
+border-bottom: 1px solid;
+    border-bottom-color:#333333;
+   
+     background-color: #101010;
+}
+.header .logo{
+    text-align: left;
+    padding-left: 15px;
+    font-size:2rem;
+    font-family: Cinzel, serif;
+    letter-spacing:5px;
+  
+}
+.header-right{
+    float: right;
+    padding-top: 8px;
+    padding-right: 10px;
+    
+}
+
+
+.header-right a{
+    margin-left: 15px;   
+
+}
+.header-right .logo:hover, a:hover{
+  font-weight: 600;
+}
+.header.portfolio{
+     height: 5vh;   
+}
+
+
+/*sections about & contacts*/
+
+.sections{    
+    text-align: center;
+  
+}
+
+.about{   
+    margin-top: 10vh;
+    height: 60vh;
+    background-image: url(images/pic.png);   
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+.sections-about{  
+  margin: auto;
+    
+}   
+
+
+ .about-text{
+   
+    width: 70%;
+    max-width: 800px; 
+     margin: auto;
+     padding: 10px;
+     text-shadow:  0 0 10px  black;
+}
+ .sections-about h1{
+    font-size: 1.2rem;     
+}
+
+.contacts{
+    margin-top: 10vh;
+    height:80vh;
+    background-image: url(images/pic2.png);   
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+/*slider*/
+container-slideshow{
+    width: 100%;
+    height: 90vh;
+    display: block;
+    background-color: aqua;
+}
+.slideshow{
+    width: 80%;
+    height: 800px;
+    overflow: hidden;
+}
+.slide{
+    height: 1080px;
+
+}
+
+
+/*footer*/
+footer{
+    height:10vh;
+    background-color: #101010;
+    color:#555555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+  ;
+  
+}
+
+
+
+/*when width less then 700*/
+
+@media(max-width:900px){
+    .header-right{
+        display: none;
+    }
+    .header-top{
+        display: flex;
+    }
+    .header .logo{
+        margin: auto;
+    }
+}
